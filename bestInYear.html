@@ -1,0 +1,29 @@
+<!-- Name: Nolan O'Rourke no21b 
+The program in this file is the individual work of Nolan O'Rourke
+File: bestInYear.html
+Homework: 2
+February 14, 2024 -->
+
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>Title</td>
+            <td>Genre</td>
+            <td>Avg Rating</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Title"]}}</td>
+               <td>{{row["Genre"]}}</td>
+               <td> {{ row["AvgRating"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      <a href = "/">Go back to home page</a>
+      
+   </body>
+</html>

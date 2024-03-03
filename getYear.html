@@ -1,0 +1,21 @@
+<!-- Name: Nolan O'Rourke no21b 
+The program in this file is the individual work of Nolan O'Rourke
+File: getYear.html
+Homework: 2
+February 14, 2024 -->
+
+<html>
+    <head>
+        <title>Top 5 Movies</title>
+    </head>
+    <body>
+        <h1>Top 5 Movie of a Year</h1>
+        <form action = {{url_for('list_Top_Five') }} method = "POST">
+            <label>Year: </label>
+            <input type = "text" name = "Year" required>
+            <br>
+            <input type = "submit" value = "Submit">
+            <h4><a href = "/">Back to Home</a></h4>
+        </form>
+    </body>
+</html>

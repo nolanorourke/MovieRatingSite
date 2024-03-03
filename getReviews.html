@@ -1,0 +1,21 @@
+<!-- Name: Nolan O'Rourke no21b 
+The program in this file is the individual work of Nolan O'Rourke
+File: getReview.html
+Homework: 2
+February 14, 2024 -->
+
+<html>
+    <head>
+        <title>Show Reviews</title>
+    </head>
+    <body>
+        <h1>Get All Reviews for a Genre</h1>
+        <form action = {{ url_for('list_by_genre') }} method = "POST">
+            <label>Genre: </label>
+            <input type = "text" name = "Genre" required>
+            <br>
+            <input type = "Submit" value = "Submit">
+            <h4><a href = "/">Back to Home</a></h4>
+        </form>
+    </body>
+</html>

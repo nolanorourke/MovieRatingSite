@@ -1,0 +1,43 @@
+<!-- Name: Nolan O'Rourke no21b 
+The program in this file is the individual work of Nolan O'Rourke
+File: addReview.html
+Homework: 2
+February 14, 2024 -->
+
+<html>
+    <head>
+        <title>Add a Review</title>
+    </head>
+    <body>
+        <form action = "{{ url_for('add_review') }}" method = "POST">
+            <h1>Submit a new review</h1>
+            <label>Your username</label>
+            <input placeholder = "Dori" type = "text" name = "Username" required>
+
+            <h3>Movie Information</h3>
+            <label>Title:</label>
+            <input placeholder = "Finding Nemo" type = "text" name = "Title" required>
+            <br>
+            <label>Director:</label>
+            <input placeholder = "Andrew Stanton" type = "text" name = "Director" required>
+            <br>
+            <label>Year:</label>
+            <input placeholder = "2003" type ="text" name = "Year" required>
+            <br>
+            <label>Genre:</label>
+            <input placeholder = "Animation" type = "text" name = "Genre" required>
+
+            <h3>Your Review</h3>
+            <label>Review:</label>
+            <textarea placeholder = "'Fish are friends: not food' is my new life motto!" name = "Review" required></textarea>
+            <br>
+
+            <label>Rating:</label>
+            <input placeholder = 4.9 type = "text" name = "Rating" required>
+            <br>
+            <input type = "submit" value ="Submit">
+            <br>
+            <h4><a href = "/">Back to Home</a></h4>
+        </form>
+    </body>
+</html>
